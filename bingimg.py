@@ -38,7 +38,7 @@ class BingImgPlugin(Plugin):
         
         if content.startswith("美景图"):
             # 随机 数字 0-7
-            random_num = str(random.randint(0, 7))
+            random_num = random.randint(0, 7)
             # message = content.replace("美景图", "").strip()
             image_url = self.get_card_image_url(random_num)
             if image_url:
