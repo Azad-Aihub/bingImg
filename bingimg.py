@@ -1,11 +1,12 @@
 # bingimg.py
 
 # encoding:utf-8
-from io import BytesIO
-import random
 import requests
 import os
 import plugins
+from io import BytesIO
+from bridge.context import ContextType
+from bridge.reply import Reply, ReplyType
 from common.log import logger
 from plugins import *
 
