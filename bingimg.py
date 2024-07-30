@@ -4,6 +4,7 @@
 import requests
 import os
 import plugins
+import random
 from io import BytesIO
 from bridge.context import ContextType
 from bridge.reply import Reply, ReplyType
