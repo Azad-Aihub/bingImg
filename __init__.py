@@ -1,0 +1,1 @@
+from .bingimg import *
