@@ -36,10 +36,10 @@ class BingImgPlugin(Plugin):
 
         content = e_context["context"].content.strip()
         
-        if content.startswith("美景图"):
+        if content.startswith("bing每日一图"):
             # 随机 数字 0-7
             random_num = random.randint(0, 7)
-            # message = content.replace("美景图", "").strip()
+            # message = content.replace("bing每日一图", "").strip()
             image_url = self.get_card_image_url(random_num)
             if image_url:
                 image_data = self.download_image(image_url)
@@ -55,7 +55,7 @@ class BingImgPlugin(Plugin):
                 e_context["reply"] = reply
 
     def get_help_text(self, **kwargs):
-        help_text = "输入【美景图】 获得图片。"
+        help_text = "输入【bing每日一图】 获得图片。"
         return help_text
 
     def get_card_image_url(self, count):
